@@ -4,9 +4,12 @@
 }
 
 body{
-    /* background-image: url(bg.jpeg); */
+    background-image: url(bg.jpeg);
     background-size: cover;
-    
+    width: 100%;
+    height: 100%;
+    position: fixed;
+
 }
 
 .taskbar{
@@ -16,6 +19,7 @@ body{
     display: flex;
     justify-content:center ;
     background-color:#f3f3f3;
+    z-index: 110;
 }
 
 .righttaskbar{
@@ -24,4 +28,33 @@ body{
     right:0;
     margin: 6px 0;
     height: 85%;
+}
+.startmenu{
+    position: absolute;
+    /* bottom: 50px; */
+    bottom: -646px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    transition: all 0.0.10s ease-in;
+}
+
+.startmenu img{
+    border-radius: 8px;
+}
+
+.chrome{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin-top: 10px;
+    margin-left: 15px;
+    padding-top: 5px;
+}
+
+.edge{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin-top:10px;
+    margin-left: 15px;
+    padding-top: 20px;
 }
